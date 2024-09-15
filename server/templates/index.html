@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/static/public/favicon.png">
+    <link rel="stylesheet" href="/static/index.css">
+    <script type="importmap">
+            {
+              "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+              }
+            }
+          </script>
+    <meta charset="utf-8">
+    <title>Rewind</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="logo-front">
+        <img src="/static/public/rewind_logo.png" alt="Rewind Logo">
+    </div>
+
+    <div class="container-row">
+
+        <div class="container_head">
+
+            <div class="header">
+
+                <img src="/static/public/timothy.jpg" alt="Profile Picture" class="profile-img">
+                <div class="user-info">
+
+                    <h1>{{name}}</h1> <!-- Dynamic content based on the person -->
+                    <p>Where memories live forever, one moment at a time</p>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="container">
+            <!-- Header Section -->
+            <!-- Memory Section (Horizontal cards) -->
+            <form method=post enctype=multipart/form-data>
+            <div class="memory-cards">
+
+                <div class="card">
+                    <a>
+                        <button name="button1">
+                            <img src="/static/public/redplant.png" alt="Memory 1">
+                        </button>
+                    </a>
+                    <p>Redbull next to Plants</p>
+                    <span>Sep 14, 2077</span>
+                </div>
+
+                <div class="card">
+                    <a>
+                        <button name="button2">
+                            <img src="/static/public/pool.png" alt="Memory 2">
+                        </button>
+                    </a>
+                    <p>Pool Table</p>
+                    <span>Sep 15, 2024</span>
+                </div>
+
+                <div class="card">
+                    <a>
+                        <button name="button3">
+                            <img src="/static/public/intersystems.png" alt="Memory 3">
+                        </button>
+                    </a>
+                    <p>Intersystems Booth</p>
+                    <span>Sep 69, 6969</span>
+                </div>
+
+            </div>
+            </form>
+        </div>
+
+        <!-- Upload & Chat Icons -->
+        <div class="icons">
+
+            <form method=post enctype=multipart/form-data>
+            <button name="upload" class="upload-btn">
+                <img src="/static/public/cloudupload.png" alt="Upload">
+            </button>
+
+            <button name = "chat" class="chat-btn">
+                <img src="/static/public/chat.png" alt="Chat">
+            </button>
+            </form> 
+
+        </div>
+
+    </div>
+</body>
+
+</html>
